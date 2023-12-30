@@ -1,0 +1,16 @@
+npx create-react-app my-react-app --template typescript
+cd my-react-app
+npm install axios tailwindcss
+npx tailwindcss init -p
+Sửa file tailwind.config.js:
+
+module.exports = {
+  // ...
+  purge: [],
+  // ...
+}
+Thêm dòng sau vào file src/index.css:
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
